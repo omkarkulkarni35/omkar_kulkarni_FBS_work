@@ -1,0 +1,15 @@
+# Write a program to find the second largest element in the list.
+
+li = [10, 810, 20, 30, 50, 40,]
+
+max = li[0]
+smax = 0
+for i in range(1,len(li)):
+    if (li[i] > max):
+        smax = max
+        max = li[i]
+    elif(li[i] > smax):
+        smax = li[i]
+
+print(f"Maximum number is : {max}")
+print(f"Second Maximum number is : {smax}")
